@@ -1,5 +1,6 @@
-console.log('Hello!');
+const replyBtn=document.querySelector(".replyBtn");
+const ckEditor=document.querySelector( '#editor' );
 
-$(document).ready(() => {
-  console.log('HesSchool Hello!');
-});
+replyBtn.addEventListener("click",function (e) {
+    ClassicEditor.create(ckEditor)
+})
